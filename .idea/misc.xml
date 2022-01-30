@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ClojureProjectResolveSettings">
+    <currentScheme>IDE</currentScheme>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$USER_HOME$/Box Sync/projects/FPPiS/funsets" value="1462345040000" />
+        <entry key="$USER_HOME$/Box Sync/projects/FPPiS/objsets" value="1462348046000" />
+        <entry key="$PROJECT_DIR$/../../FunctionalProgrammingInScala" value="1444614217000" />
+        <entry key="$PROJECT_DIR$/../../fpinscala" value="1445011525000" />
+        <entry key="$USER_HOME$/projects/FPPiS/example" value="1459545174000" />
+        <entry key="$USER_HOME$/projects/FPPiS/recfun" value="1462397930000" />
+        <entry key="$USER_HOME$/projects/lambdajam-patterns-in-types" value="1465594729000" />
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ScalaProjectSettings">
+    <option name="intInjectionMapping">
+      <map>
+        <entry key="xml" value="XML" />
+      </map>
+    </option>
+  </component>
+</project>
