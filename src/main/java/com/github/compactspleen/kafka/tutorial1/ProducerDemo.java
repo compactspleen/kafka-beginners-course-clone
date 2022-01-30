@@ -2,6 +2,7 @@ package com.github.compactspleen.kafka.tutorial1;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.util.Properties;
@@ -18,11 +19,18 @@ public class ProducerDemo {
         properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
 
         // Create the producer
-        final KafkaProducer kafkaProducer = new KafkaProducer<>(properties);
+        final KafkaProducer<String, String> kafkaProducer = new KafkaProducer<>(properties);
 
-        
-        // send data
+        // Create a producer record to send
+        final ProducerRecord<String, String> producerRecord = new ProducerRecord<>("first_topic", "Hello, world from " + ProducerDemo.class.getName());
 
-        
+        // send data - asynchronous
+        kafkaProducer.send(producerRecord);
+
+        // flush data
+        kafkaProducer.flush();
+
+        // flush data and close
+        kafkaProducer.close();
     }
 }
